@@ -1,0 +1,10 @@
+package com.aurionpro.test;
+
+public class FixedDepositTest {
+
+	public static void main(String[] args) {
+		FixedDeposit fd1 = new FixedDeposit(111, "Amisha", 10000, 3, new DiwaliInterest());
+
+	}
+
+}

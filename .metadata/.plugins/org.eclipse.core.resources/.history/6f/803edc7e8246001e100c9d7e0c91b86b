@@ -1,0 +1,19 @@
+package com.aurionpro.model;
+
+public class TaxCalculator {
+	private DBLogger dblogger;
+
+	public TaxCalculator(DBLogger dblogger) {
+		super();
+		this.dblogger = dblogger;
+	}
+
+	public DBLogger getDblogger() {
+		return dblogger;
+	}
+
+	public void setDblogger(DBLogger dblogger) {
+		this.dblogger = dblogger;
+	}
+
+}

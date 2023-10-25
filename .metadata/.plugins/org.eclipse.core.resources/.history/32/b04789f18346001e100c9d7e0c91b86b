@@ -1,0 +1,31 @@
+package com.aurionpro.model;
+
+public class TaxCalculator {
+	private DBLogger dblogger;
+
+	public TaxCalculator(DBLogger dblogger) {
+		super();
+		this.dblogger = dblogger;
+	}
+
+	public DBLogger getDblogger() {
+		return dblogger;
+	}
+
+	public void setDblogger(DBLogger dblogger) {
+		this.dblogger = dblogger;
+	}
+	
+	public int calculateTax(int amount, int rate) {
+	    int tax = 0;
+	    try {
+	        tax = amount / rate;
+	        System.out.println(tax);
+	    } catch (ArithmeticException e) {
+	        dblogger.log("Divide by zero");
+	    }
+	    return tax;
+	}
+
+
+}

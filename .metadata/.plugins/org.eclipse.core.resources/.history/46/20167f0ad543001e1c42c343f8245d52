@@ -1,0 +1,27 @@
+package com.aurionpro.model;
+
+public class HoliInterest implements IFestivalInterest {
+    private String festival;
+
+    // Constructor to set the festival type
+    public HoliInterest(String festival) {
+        this.festival = festival;
+    }
+
+    @Override
+    public double getInterestRate() {
+        double interestRate;
+
+        if ("NEWYEAR".equals(festival)) {
+            interestRate = 8.0;
+        } else if ("DIWALI".equals(festival)) {
+            interestRate = 8.5;
+        } else if ("HOLI".equals(festival)) {
+            interestRate = 7.5;
+        } else {
+            interestRate = 6.5;
+        }
+
+        return interestRate;
+    }
+}

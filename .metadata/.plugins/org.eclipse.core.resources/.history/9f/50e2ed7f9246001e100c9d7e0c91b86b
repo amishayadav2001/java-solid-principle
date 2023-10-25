@@ -1,0 +1,9 @@
+package com.aurionpro.model;
+
+public class Bird {
+	public void Fly(){
+		   System.out.println("The bird is flying.");
+		 
+	 }
+
+}

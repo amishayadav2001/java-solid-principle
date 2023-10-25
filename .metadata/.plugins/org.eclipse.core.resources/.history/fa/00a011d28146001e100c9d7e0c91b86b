@@ -1,0 +1,7 @@
+package com.aurionpro.model;
+
+public class DBLogger {
+	void log(err:String);
+	System.out.println("Logged to database " +err);
+
+}

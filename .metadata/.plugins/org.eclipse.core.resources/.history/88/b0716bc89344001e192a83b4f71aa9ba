@@ -1,0 +1,40 @@
+package com.aurionpro.test;
+
+import java.util.List;
+
+import com.aurionpro.model.Guitar;
+import com.aurionpro.model.Inventory;
+import com.aurionpro.model.Builder; // Import Builder enum
+import com.aurionpro.model.Type; // Import Type enum
+import com.aurionpro.model.Wood; // Import Wood enum
+
+public class GuitarTest {
+    public static void main(String[] args) {
+        Inventory inventory = new Inventory();
+        initializeInventory(inventory);
+
+        Guitar whatAmishaLikes = new Guitar("133", 111, Builder.FENDER, "Stratocaster", Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
+
+        List<Guitar> matchingGuitars = inventory.search(whatAmishaLikes);
+
+        if (!matchingGuitars.isEmpty()) {
+            for (Guitar guitar : matchingGuitars) {
+                System.out.println("Amisha, you might like this " +
+                        guitar.getBuilder() + " " + guitar.getModel() + " " +
+                        guitar.getType() + " guitar:\n " +
+                        guitar.getBackWood() + " back and sides,\n " +
+                        guitar.getTopWood() + " top.\nYou can have it for only $" +
+                        guitar.getPrice() + "!");
+            }
+        } else {
+            System.out.println("Sorry, Amisha, we have nothing for you.");
+        }
+    }
+
+    private static void initializeInventory(Inventory inventory) {
+        inventory.addGuitar("123", 999, Builder.FENDER, "Stratocaster", Type.ELECTRIC, Wood.MAPLE, Wood.ALDER);
+        inventory.addGuitar("456", 1499, Builder.GIBSON, "Les Paul", Type.ELECTRIC, Wood.MAHOGANY, Wood.MAPLE);
+        inventory.addGuitar("789", 1999, Builder.MARTIN, "D-28", Type.ACOUSTIC, Wood.INDIAN_ROSEWOOD, Wood.COCOBOLO);
+        inventory.addGuitar("133", 111, Builder.FENDER, "Stratocaster", Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
+    }
+}

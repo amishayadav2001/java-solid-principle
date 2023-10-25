@@ -1,0 +1,60 @@
+package com.aurionpro.model;
+
+public class DiwaliInterest implements IFestivalInterest {
+    private String festival;
+
+    public DiwaliInterest(String festival) {
+        this.festival = festival;
+    }
+
+    @Override
+    public double getInterestRate() {
+        double interestRate;
+
+        if ("NEWYEAR".equals(festival)) {
+            interestRate = 8.0;
+        } else if ("DIWALI".equals(festival)) {
+            interestRate = 8.5;
+        }
+        else {
+            interestRate = 6.5;
+        }
+
+        return interestRate;
+    }
+}
+
+
+
+
+
+
+
+
+
+//package com.aurionpro.model;
+//
+//public class DiwaliInterest implements IFestivalInterest {
+//
+//	@Override
+//	public double getInterestRate() {
+//		double interestRate;
+//
+//		if (festival == FestivalType.NEWYEAR) {
+//			interestRate = 8.0;
+//		} else if (festival == FestivalType.DIWALI) {
+//			interestRate = 8.5;
+//		} else if (festival == FestivalType.HOLI) {
+//			interestRate = 7.5;
+//		} else {
+//			interestRate = 6.5;
+//		}
+//
+//		return interestRate;
+//	}
+//	
+//		
+//		
+//	}
+//
+//}

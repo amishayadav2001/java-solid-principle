@@ -1,0 +1,17 @@
+package com.aurionpro.model;
+
+public class Pigeon implements IFlyable {
+
+	@Override
+	public void BodyColor() {
+		System.out.println("The body color of ostrich is white");
+		
+	}
+
+	@Override
+	public void Fly() {
+		System.out.println("The pigeon is flying");
+		
+	}
+
+}

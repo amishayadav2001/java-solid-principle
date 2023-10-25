@@ -1,0 +1,17 @@
+package com.aurionpro.model;
+
+public class Pigeon implements IFlyable {
+
+	@Override
+	public void BodyColor() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Fly() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

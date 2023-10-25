@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Remote"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Rectangle"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.IWorker"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.IWorkable"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Robot"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.TaxCalculator"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Bird"/>
+</qualifiedTypeNameHistroy>

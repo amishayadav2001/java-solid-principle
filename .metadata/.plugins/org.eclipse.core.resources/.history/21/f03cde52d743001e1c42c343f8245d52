@@ -1,0 +1,15 @@
+package com.aurionpro.test;
+
+import com.aurionpro.model.DiwaliInterest;
+import com.aurionpro.model.FixedDeposit;
+
+public class FixedDepositTest {
+
+	public static void main(String[] args) {
+		FixedDeposit fd1 = new FixedDeposit(111, "Amisha", 10000, 3, new DiwaliInterest());
+		System.out.println(fd1);
+		System.out.println(fd1.calculateSimpleInterest());
+
+	}
+
+}

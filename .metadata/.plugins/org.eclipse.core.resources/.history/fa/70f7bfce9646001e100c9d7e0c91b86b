@@ -1,0 +1,29 @@
+package com.aurionpro.test;
+
+import com.aurionpro.model.Ostrich;
+import com.aurionpro.model.Pigeon;
+import com.aurionpro.model.Sparrow;
+
+public class BirdTest {
+	public static void main(String[] args) {
+		// Test the Ostrich class
+		Ostrich ostrich = new Ostrich();
+		System.out.println("Ostrich Test:");
+		ostrich.BodyColor();
+		ostrich.Walk();
+		System.out.println();
+
+		// Test the Pigeon class
+		Pigeon pigeon = new Pigeon();
+		System.out.println("Pigeon Test:");
+		pigeon.BodyColor();
+		pigeon.Fly();
+		System.out.println();
+
+		// Test the Sparrow class
+		Sparrow sparrow = new Sparrow();
+		System.out.println("Sparrow Test:");
+		sparrow.BodyColor();
+		sparrow.Fly();
+	}
+}

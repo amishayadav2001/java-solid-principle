@@ -1,0 +1,30 @@
+package com.aurionpro.test;
+
+import com.aurionpro.model.Guitar;
+import com.aurionpro.model.Inventory;
+
+public class GuitarTest {
+	public static void main(String[] args) {
+		Inventory inventory = new Inventory();
+		initializeInventory(inventory);
+		
+		Guitar whatAmishaLikes = new Guitar("Amisha", "sada", "sajg", "savj", "eygutu", "adjbj", 111);
+		
+		Guitar guitar = inventory.search(whatAmishaLikes);
+		if (guitar != null) {
+			System.out.println("Amisha, you might like this " + 
+		guitar.getBuilder() + " " + guitar.getModel() + " "
+		guitar.getType() + "  guitar:\n " +
+		guitar.getBackWood() + " back and sides,\n " +
+		guitar.getTopWood() + " top.\nYou can have it for only $" + 
+		guitar.getPrice() + "!");
+		}else {
+			System.out.println("Sorry, Amisha, we have nothing for you.");
+		}
+	}
+
+	private static void initializeInventory(Inventory inventory) {
+
+	}
+
+}

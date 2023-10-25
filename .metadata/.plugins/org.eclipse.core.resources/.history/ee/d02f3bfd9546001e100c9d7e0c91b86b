@@ -1,0 +1,18 @@
+package com.aurionpro.model;
+
+public class Ostrich implements INonFlyable {
+
+	@Override
+	public void BodyColor() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Walk() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

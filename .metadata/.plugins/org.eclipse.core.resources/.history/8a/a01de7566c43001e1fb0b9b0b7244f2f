@@ -1,0 +1,20 @@
+package com.aurionpro.test;
+
+import com.aurionpro.model.FestivalType;
+import com.aurionpro.model.FixedDeposit;
+
+public class FixedDepositTest{
+
+public static void main(String[] args) {
+    // Create a FixedDeposit object
+    FixedDeposit fd = new FixedDeposit(12345, "John Doe", 10000.0, 3, FestivalType.NEYYEAR);
+
+    // Display the details of the FixedDeposit
+    System.out.println("Fixed Deposit Details:");
+    System.out.println(fd);
+
+    // Calculate and display simple interest
+    double interest = fd.calculateSimpleInterest();
+    System.out.println("Simple Interest: " + interest);
+}
+}
